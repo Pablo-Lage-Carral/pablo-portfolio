@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography, styled } from "@mui/material"
+import { Box, Container, Grid, Typography, styled } from "@mui/material"
 import Avatar from "../../../../assets/Images/image.png"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
@@ -17,7 +17,7 @@ const   Hero = () => {
             paddingTop: "100px"
         },
         [theme.breakpoints.up("md")]: { // desktop
-            paddingTop: "0px"
+            paddingTop: "100px"
         }
     }))
 
@@ -53,7 +53,7 @@ const   Hero = () => {
 
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick="">
+                                <StyledButton onClick={() => console.log("download")}>
                                     <DownloadIcon/>
                                         <Typography>
                                             Download CV
@@ -63,7 +63,7 @@ const   Hero = () => {
                             </Grid>
 
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick="">
+                                <StyledButton onClick={() => console.log("contato")}>
                                     <EmailIcon/>
                                     Contate-me 
                                 </StyledButton>

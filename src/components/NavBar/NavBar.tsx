@@ -14,7 +14,7 @@ const   NavBar = () => {
         <AppBar position="absolute">
             <StyledToolbar>
                 <MenuItem>Sobre</MenuItem>
-                <MenuItem>Habilidades</MenuItem>
+                <MenuItem >Habilidades</MenuItem>
                 <MenuItem>Projetos</MenuItem>
             </StyledToolbar>
             

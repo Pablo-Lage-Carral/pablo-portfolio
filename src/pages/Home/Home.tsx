@@ -5,7 +5,8 @@ import Hero from "./Sections/Hero/Hero"
 const   Home = () => {
 
 
-    return (
+    
+  return (
       <>
         <NavBar/>
         <Hero/>
@@ -14,4 +15,3 @@ const   Home = () => {
   }
   
   export default Home
-  
