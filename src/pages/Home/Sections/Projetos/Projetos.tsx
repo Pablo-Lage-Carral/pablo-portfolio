@@ -9,20 +9,20 @@ const Projetos = () => {
     const StyledProjetos = styled("div")({
       backgroundColor: theme.palette.primary.main,
       height: "100vh",
-      display: "flex",
-      justifyContent: "Center",
-      padding: "10px"
+      padding: "50px",
     });
 
     const StyledTitle = styled(Typography)({
       fontSize: "3rem",
       height: "20px",
       fontWeight: "bold",
-      paddingBottom: "6rem"
+      paddingBottom: "6rem",
+      display: "flex",
+      justifyContent: "Center",
+
     });
   
-    const Conteiner = styled("div")({
-    });
+
   
     return (
       <StyledProjetos id="projetos">
@@ -31,9 +31,7 @@ const Projetos = () => {
           Projetos
         </StyledTitle>
 
-        <Conteiner>
 
-        </Conteiner>
 
 
 
