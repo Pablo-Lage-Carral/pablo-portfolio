@@ -1,30 +1,3 @@
-/*import styled from "@emotion/styled"
-
-
-const Habilidades = () => {
-    
-    const StyledHabilidades = styled("div")(() => ({
-        background: "grey",
-        height: "100vh"
-    }))
-
-    
-    return (
-        <>
-            <StyledHabilidades>
-                
-            </StyledHabilidades>
-        </>
-      )
-}
-    
-    export default Habilidades
-
-*/
-
-
-
-
 import styled from "@emotion/styled";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import theme from "../../../../theme";
@@ -33,19 +6,19 @@ import theme from "../../../../theme";
 const Habilidades = () => {
 
   //Section
-  const StyledHabilidades = styled("div")(() => ({
+  const StyledHabilidades = styled("div")({
     background: "grey",
     height: "100vh",
     display: "flex",
-    justifyContent: "center"
-    
-  }));
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  });
 
   //Card
   const StyledCard = styled(Card)(() => ({
     backgroundColor: theme.palette.secondary.main,
-    width: '100%',
-    maxWidth: '200px',
+    width: '250px',
     height: '100px',
     display: 'flex',
     justifyContent: 'center',
@@ -77,63 +50,85 @@ const Habilidades = () => {
     fontSize: "3rem",
     height: "20px",
     fontWeight: "bold",
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    paddingBottom: "6rem",
   }));
+
+  // Conteiner
+  const Conteiner = styled("div")({
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",  
+  });
+
+  //Conteiner Botões
+  const StyleDivButtons = styled("div")({
+    display: "flex",
+    gap: "50px",
+    flexWrap: "wrap", // Permite que os cards se movam para a linha seguinte se necessário
+    justifyContent: "center",
+  });
+
 
 
   return (
-  
+    
     <StyledHabilidades id="habilidades">
 
-      <StyledTitle>
-        HABILIDADES
-      </StyledTitle>
 
-      <Grid>
+       
+      <Conteiner>
 
+        <StyledTitle>
+          Habilidades
+        </StyledTitle>
 
+        <StyleDivButtons>
 
-        <Grid item xs={10} md={4}>
-          <StyledCard>
-            <StyledCardContent>
-              <StyledTypography>
-                React
-              </StyledTypography>
-            </StyledCardContent>
-          </StyledCard>
-        </Grid>
+          <Grid item xs={10} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>
+                  React
+                </StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
 
-        <Grid item xs={10} md={4}>
-          <StyledCard>
-            <StyledCardContent>
-              <StyledTypography>
-                TypeScript
-              </StyledTypography>
-            </StyledCardContent>
-          </StyledCard>
-        </Grid>
+          <Grid item xs={10} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>
+                  TypeScript
+                </StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
 
-        <Grid item xs={10} md={4}>
-          <StyledCard>
-            <StyledCardContent>
-              <StyledTypography>
-                Python
-              </StyledTypography>
-            </StyledCardContent>
-          </StyledCard>
-        </Grid>
+          <Grid item xs={10} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>
+                  Python
+                </StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
 
-        <Grid item xs={10} md={4}>
-          <StyledCard>
-            <StyledCardContent>
-              <StyledTypography>
-                DevOps
-              </StyledTypography>
-            </StyledCardContent>
-          </StyledCard>
-        </Grid>
+          <Grid item xs={10} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>
+                  DevOps
+                </StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
 
-      </Grid>
+        </StyleDivButtons>
+        
+
+      </Conteiner>
 
       
 
