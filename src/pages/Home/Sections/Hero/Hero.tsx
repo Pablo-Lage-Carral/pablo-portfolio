@@ -118,13 +118,16 @@ const   Hero = () => {
 
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("download")}>
-                                    <DownloadIcon/>
-                                        <Typography>
-                                            Download CV
-                                        </Typography>
-                                        
+                            <Link href="/cv_pablo_carral.pdf" download>
+                                <StyledButton onClick={function (): void {
+                                            throw new Error("Function not implemented.");
+                                        } }>
+                                    <DownloadIcon />
+                                    <Typography>
+                                        Download CV
+                                    </Typography>
                                 </StyledButton>
+                            </Link>
                             </Grid>
 
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
