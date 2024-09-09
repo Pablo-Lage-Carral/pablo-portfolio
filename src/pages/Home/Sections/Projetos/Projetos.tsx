@@ -1,25 +1,42 @@
 import styled from "@emotion/styled"
 import theme from "../../../../theme"
+import { Typography } from "@mui/material";
 
 
 const Projetos = () => {
  
     // Section
-    const StyledProjetos = styled("div")(() => ({
+    const StyledProjetos = styled("div")({
       backgroundColor: theme.palette.primary.main,
       height: "100vh",
       display: "flex",
-      justifyContent: "space-between", // Espaça o conteúdo entre o topo e o fundo
-      alignItems: "center", // Centraliza o conteúdo horizontalmente
-    }));
-  
+      justifyContent: "Center",
+      padding: "10px"
+    });
 
+    const StyledTitle = styled(Typography)({
+      fontSize: "3rem",
+      height: "20px",
+      fontWeight: "bold",
+      paddingBottom: "6rem"
+    });
+  
+    const Conteiner = styled("div")({
+    });
   
     return (
       <StyledProjetos id="projetos">
-        <div>
+        
+        <StyledTitle>
           Projetos
-        </div>
+        </StyledTitle>
+
+        <Conteiner>
+
+        </Conteiner>
+
+
+
 
       </StyledProjetos>
     );

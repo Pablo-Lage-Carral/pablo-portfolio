@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography, styled } from "@mui/material"
+import { Box, Container, Grid, Link, Typography, styled } from "@mui/material"
 import Avatar from "../../../../assets/Images/image.png"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
@@ -34,7 +34,7 @@ const   Hero = () => {
             <Container maxWidth="lg">
 
                 <Grid container spacing={5}>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={10} md={5}>
                         <Box position="relative">
                             <Box position="absolute" width={"170%"} top={-100} right={0}>
                                 <AnimatedBackground/>
@@ -63,11 +63,16 @@ const   Hero = () => {
                             </Grid>
 
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("contato")}>
-                                    <EmailIcon/>
-                                    Contate-me 
-                                </StyledButton>
+                                <Link href="/">
+                                    <StyledButton onClick={() => console.log("download")}>
+                                        <DownloadIcon/>
+                                            <Typography>
+                                                Contate-me
+                                            </Typography>
+                                    </StyledButton>
+                                </Link>
                             </Grid>
+                            
                         </Grid>
                         
           
