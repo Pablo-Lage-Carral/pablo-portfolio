@@ -1,4 +1,4 @@
-import React from "react";
+
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material";
 import { Link } from "react-scroll"; // Importação do react-scroll para navegação suave
 
