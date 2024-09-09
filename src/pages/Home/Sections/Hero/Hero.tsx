@@ -29,14 +29,14 @@ const   Hero = () => {
 
     return (
       <>
-        <StyledHero>
+        <StyledHero id="sobre">
 
             <Container maxWidth="lg">
 
-                <Grid container spacing={2}>
+                <Grid container spacing={5}>
                     <Grid item xs={12} md={5}>
                         <Box position="relative">
-                            <Box position="absolute" width={"150%"} top={-100} right={0}>
+                            <Box position="absolute" width={"170%"} top={-100} right={0}>
                                 <AnimatedBackground/>
                             </Box >
                         </Box>
@@ -48,7 +48,7 @@ const   Hero = () => {
 
                     <Grid item xs={12} md={7}>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Pablo Lage Carral</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">Sou um Engenheiro de Software</Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="center">Engenheiro de Software</Typography>
                         
 
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
