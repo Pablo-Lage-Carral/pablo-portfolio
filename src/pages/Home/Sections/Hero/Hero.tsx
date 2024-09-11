@@ -12,10 +12,13 @@ const   Hero = () => {
     const StyledHero = styled("div")(({theme}) => ({
         backgroundColor: theme.palette.primary.main,
         height: "100dvh",
+        maxHeight: "100dvh",
+        width: "100dvw",
+        maxWidth: "100dvw",
         display: "flex",
         alignems: "center",
         [theme.breakpoints.up("xs")]: { // celular
-            paddingTop: "50px"
+            paddingTop: "1px"
         },
         [theme.breakpoints.up("md")]: { // desktop
             paddingTop: "100px"
