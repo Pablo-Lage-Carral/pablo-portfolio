@@ -8,7 +8,7 @@ const Habilidades = () => {
   //Section
   const StyledHabilidades = styled("div")({
     background: "grey",
-    height: "100vh",
+    height: "100dvh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

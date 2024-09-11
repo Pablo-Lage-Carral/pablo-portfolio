@@ -11,7 +11,7 @@ const   Hero = () => {
 
     const StyledHero = styled("div")(({theme}) => ({
         backgroundColor: theme.palette.primary.main,
-        height: "100vh",
+        height: "100dvh",
         display: "flex",
         alignems: "center",
         [theme.breakpoints.up("xs")]: { // celular

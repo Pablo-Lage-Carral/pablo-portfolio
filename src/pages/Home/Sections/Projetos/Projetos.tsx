@@ -8,7 +8,7 @@ const Projetos = () => {
     // Section
     const StyledProjetos = styled("div")({
       backgroundColor: theme.palette.primary.main,
-      height: "100vh",
+      height: "100dvh",
       padding: "50px",
     });
 
