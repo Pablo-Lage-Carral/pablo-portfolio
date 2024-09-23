@@ -7,6 +7,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
+
+
 const   Hero = () => {
 
     const StyledHero = styled("div")(({theme}) => ({
@@ -120,7 +122,7 @@ const   Hero = () => {
 
 
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                            <Grid>
                             <Link href="/cv_pablo_carral.pdf" download>
                                 <StyledButton onClick={function (): void {
                                             throw new Error("Function not implemented.");
@@ -131,17 +133,6 @@ const   Hero = () => {
                                     </Typography>
                                 </StyledButton>
                             </Link>
-                            </Grid>
-
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <Link href={"Contate.tsx"}>
-                                    <StyledButton onClick={() => console.log("download")}>
-                                        <DownloadIcon/>
-                                            <Typography>
-                                                Contate-me
-                                            </Typography>
-                                    </StyledButton>
-                                </Link>
                             </Grid>
                             
                         </Grid>

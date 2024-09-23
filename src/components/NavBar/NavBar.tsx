@@ -20,6 +20,9 @@ const NavBar = () => {
         <Link to="projetos" smooth={true} duration={900}>
           <MenuItem>Projetos</MenuItem>
         </Link>
+        <Link to="Contate" smooth={true} duration={900}>
+          <MenuItem>Contato</MenuItem>
+        </Link>
       </StyledToolbar>
     </AppBar>
   );
