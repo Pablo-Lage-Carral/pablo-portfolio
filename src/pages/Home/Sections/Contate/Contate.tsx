@@ -8,6 +8,7 @@ const Contate = () => {
     height: "100vh",
     padding: "50px",
     display: "flex",
+    flexDirection: "column", // Alinhamento vertical
     justifyContent: "center",
     alignItems: "center",
   });
@@ -19,6 +20,7 @@ const Contate = () => {
     borderRadius: "5px",
     boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
     width: "300px",
+    marginTop: "auto", // Move o formulário para o centro verticalmente
   });
 
   const Input = styled("input")({
@@ -39,16 +41,22 @@ const Contate = () => {
     minHeight: "100px", // Altura mínima
   });
 
-  const SubmitButton = styled(Input)( {
+  const SubmitButton = styled(Input)({
     backgroundColor: "white",
     color: "black",
     cursor: "pointer",
   });
 
+  const Title = styled("h1")({
+    alignSelf: "flex-start", // Alinha o título ao topo
+    marginBottom: "20px", // Espaçamento entre o título e o formulário
+    textAlign: "center"
+  });
+
   return (
     <StyledProjetos id="Contate">
+      <Title>Contate-me</Title>
       <FormContainer>
-        <h2>Contate-me</h2>
         <form>
           <label htmlFor="nome">Nome:</label>
           <Input type="text" id="nome" name="nome" required />
