@@ -5,12 +5,12 @@ const Contate = () => {
   // Section
   const StyledProjetos = styled("div")({
     backgroundColor: "grey",
-    height: "100vh",
-    padding: "50px",
+    height: "100vh", // Ocupa toda a altura da tela
+    padding: "80px",
     display: "flex",
     flexDirection: "column", // Alinhamento vertical
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "center", // Centraliza verticalmente
+    alignItems: "center", // Centraliza horizontalmente
   });
 
   const FormContainer = styled("div")({
@@ -20,7 +20,6 @@ const Contate = () => {
     borderRadius: "5px",
     boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
     width: "300px",
-    marginTop: "auto", // Move o formulário para o centro verticalmente
   });
 
   const Input = styled("input")({
@@ -48,9 +47,11 @@ const Contate = () => {
   });
 
   const Title = styled("h1")({
-    alignSelf: "flex-start", // Alinha o título ao topo
-    marginBottom: "20px", // Espaçamento entre o título e o formulário
-    textAlign: "center"
+    textAlign: "center", // Centraliza o título horizontalmente
+    marginBottom: "20px",
+    fontSize: "3rem",
+    fontWeight: "bold",
+    color: theme.palette.primary.main,
   });
 
   return (
