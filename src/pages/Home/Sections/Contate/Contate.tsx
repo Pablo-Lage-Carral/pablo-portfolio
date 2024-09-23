@@ -54,11 +54,15 @@ const Contate = () => {
     color: theme.palette.primary.main,
   });
 
+
+
   return (
     <StyledProjetos id="Contate">
       <Title>Contate-me</Title>
       <FormContainer>
-        <form>
+        <form action="https://formsubmit.co/pablo.carral@outlook.com" method="POST">
+          <h2>Entre em contato comigo</h2>
+          <br/>
           <label htmlFor="nome">Nome:</label>
           <Input type="text" id="nome" name="nome" required />
           
@@ -69,6 +73,10 @@ const Contate = () => {
           <TextArea id="comentario" name="comentario" required />
           
           <SubmitButton type="submit" value="Enviar" />
+
+          <input type="hidden" name="_subject" value="Novo Contato!"/>
+          <input type="hidden" name="_honey" value='display:none'/>
+          <input type="hidden" name="_captcha" value="false"/>
         </form>
       </FormContainer>
     </StyledProjetos>
