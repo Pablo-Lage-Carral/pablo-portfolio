@@ -69,7 +69,7 @@ const Projetos = () => {
           />
           <StyledCardContent>
             <Typography variant="h5" component="div">
-              Outro Projeto
+              Integrando Telas REACT
             </Typography>
             <Link 
               href="https://github.com/Pablo-Lage-Carral/React-IntegrandoTelas" 
@@ -94,7 +94,7 @@ const Projetos = () => {
           />
           <StyledCardContent>
             <Typography variant="h5" component="div">
-              Outro Projeto
+              Cadastro Simples JAVA
             </Typography>
             <Link 
               href="https://github.com/Pablo-Lage-Carral/JAVA-CadastroSimples" 

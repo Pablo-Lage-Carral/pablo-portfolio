@@ -2,139 +2,137 @@ import styled from "@emotion/styled";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import theme from "../../../../theme";
 
-
 const Habilidades = () => {
 
-  //Section
+  // Section
   const StyledHabilidades = styled("div")({
     background: "grey",
     height: "100dvh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   });
 
-  //Card
+  // Card
   const StyledCard = styled(Card)(() => ({
     backgroundColor: theme.palette.secondary.main,
-    width: '250px',
-    height: '100px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '12px',
-    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.3s ease',          // Animação para efeito ao passar o mouse
-    '&:hover': {
-      transform: 'scale(1.35)',                 // Aumenta o Card quando o mouse passa por cima
-    }
+    width: "100%", // Garantir que o card ocupe 100% do espaço disponível
+    height: "100px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: "12px",
+    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+    transition: "transform 0.3s ease",
+    "&:hover": {
+      transform: "scale(1.1)", // Menor escala para que o efeito de hover fique mais sutil
+    },
   }));
 
-  //Card Com Texto
+  // Card Content
   const StyledCardContent = styled(CardContent)({
-    textAlign: "center"
+    textAlign: "center",
   });
 
-  //Estilo do Texto
+  // Text Style
   const StyledTypography = styled(Typography)({
     variant: "h5",
-    fontSize: "2rem",
+    fontSize: "1.2rem", // Reduzir o tamanho da fonte para telas menores
     fontFamily: "Raleway, Arial",
     width: "100%",
-
   });
 
-  // Estilo do Título
+  // Title Style
   const StyledTitle = styled(Typography)(() => ({
-    fontSize: "3rem",
-    height: "20px",
+    fontSize: "2.5rem", // Tamanho de fonte reduzido para ficar bem em mobile
     fontWeight: "bold",
     color: theme.palette.primary.main,
-    paddingBottom: "6rem",
+    paddingBottom: "3rem", // Menor padding
   }));
 
-  // Conteiner
+  // Container
   const Conteiner = styled("div")({
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",  
+    alignItems: "center",
   });
 
-  //Conteiner Botões
+  // Buttons Container
   const StyleDivButtons = styled("div")({
     display: "flex",
-    gap: "50px",
-    flexWrap: "wrap", // Permite que os cards se movam para a linha seguinte se necessário
+    gap: "20px", // Diminuir o gap para que os cards caibam melhor
+    flexWrap: "wrap", // Permitir que os cards quebrem para a linha seguinte
     justifyContent: "center",
   });
 
-
-
   return (
-    
     <StyledHabilidades id="habilidades">
-
-
-       
       <Conteiner>
-
         <StyledTitle>
           Habilidades
         </StyledTitle>
 
         <StyleDivButtons>
-
-          <Grid item xs={10} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <StyledCard>
               <StyledCardContent>
-                <StyledTypography>
-                  React
-                </StyledTypography>
+                <StyledTypography>React</StyledTypography>
               </StyledCardContent>
             </StyledCard>
           </Grid>
 
-          <Grid item xs={10} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <StyledCard>
               <StyledCardContent>
-                <StyledTypography>
-                  TypeScript
-                </StyledTypography>
+                <StyledTypography>TypeScript</StyledTypography>
               </StyledCardContent>
             </StyledCard>
           </Grid>
 
-          <Grid item xs={10} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <StyledCard>
               <StyledCardContent>
-                <StyledTypography>
-                  Python
-                </StyledTypography>
+                <StyledTypography>Python</StyledTypography>
               </StyledCardContent>
             </StyledCard>
           </Grid>
 
-          <Grid item xs={10} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <StyledCard>
               <StyledCardContent>
-                <StyledTypography>
-                  DevOps
-                </StyledTypography>
+                <StyledTypography>DevOps</StyledTypography>
               </StyledCardContent>
             </StyledCard>
           </Grid>
 
+          <Grid item xs={12} sm={6} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>Espanhol</StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>Inglês</StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <StyledCard>
+              <StyledCardContent>
+                <StyledTypography>Automação</StyledTypography>
+              </StyledCardContent>
+            </StyledCard>
+          </Grid>
         </StyleDivButtons>
-        
-
       </Conteiner>
-
-      
-
     </StyledHabilidades>
   );
 };
 
 export default Habilidades;
-
